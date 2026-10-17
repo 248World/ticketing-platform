@@ -4,9 +4,7 @@ Status: draft. Business policies marked TBC need confirmation.
 
 ## 1. Problem statement
 
-TODO (author to write in own words, 2-3 sentences):
-Who struggles when buying train or bus tickets, what goes wrong for them,
-and what this project does about it.
+Students and daily commuters who buy bus and train tickets often face outdated schedules, unclear seat availability, and payments that don’t confirm whether a ticket was issued. This project is a mobile app where a traveler can search journeys, see which seats are actually free, pay, and receive a ticket that is only issued once payment is verified, with all bookings kept in one place. The first version works against a simulated transport provider and sandbox payments, so its tickets are not valid with any real operator.
 
 ## 2. MVP scope
 
