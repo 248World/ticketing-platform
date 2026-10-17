@@ -17,3 +17,13 @@ Final choices are recorded as ADRs in docs/architecture.
 ## Local setup
 Copy .env.example to .env and set your own values. Never commit .env.
 Setup steps for the database and backend will be added as they are built.
+
+## Local database
+- Start: `docker compose --env-file .env -f infra\docker-compose.yml up -d`
+- Status: `docker compose --env-file .env -f infra\docker-compose.yml ps`
+- Test: `docker compose --env-file .env -f infra\docker-compose.yml exec db psql -U <DB_USER> -d <DB_NAME> -c "SELECT version();"`
+- Stop (keeps data): `docker compose --env-file .env -f infra\docker-compose.yml down`
+
+The database listens on 127.0.0.1 only. PostgreSQL 18+ images expect the data
+volume at /var/lib/postgresql, not /var/lib/postgresql/data.
+
