@@ -25,7 +25,7 @@ cancel it under a stated rule.
 ## 3. Assumptions
 
 - A1. The first operator is simulated and labeled as such everywhere.
-- A2. One currency, stored as integer minor units (currency TBC).
+- A2. Service area is Liberia. Default currency is LRD; USD is also supported. Each fare has a single currency, with no automatic conversion in the MVP. Amounts are stored as integer minor units with an ISO 4217 currency code.
 - A3. Small team, two-week sprints.
 - A4. Android first for mobile testing.
 - A5. Stack is a proposal until an ADR confirms it.
@@ -56,6 +56,7 @@ cancel it under a stated rule.
 | FR-042 | Payment webhooks are signature-verified and processed once. | Must |
 | FR-043 | A ticket is issued only for a confirmed, paid booking. | Must |
 | FR-044 | Each ticket has a unique reference and a verification procedure. | Must |
+| FR-045 | Payment providers are accessed through a common interface so providers can be added or           replaced. | Must |
 | FR-050 | A user can see upcoming and past trips and retrieve tickets. | Must |
 | FR-051 | A user can see cancellation and refund status. | Should |
 | FR-060 | Staff roles can manage simulated schedules and fares. | Should |
@@ -82,10 +83,10 @@ cancel it under a stated rule.
 
 ## 6. Open questions (decisions needing confirmation)
 
-1. Currency for the MVP.
+1. Currency for the MVP: decided, see ADR-0002 (LRD default, USD supported).
 2. Cancellation windows, fees, and refund percentages.
 3. Seat hold duration.
 4. Ticket validity rules.
 5. Maximum passengers per booking.
-6. Which payment sandbox is available in the author's country.
+6. Payment providers: see ADR-0002. MTN, Orange, and Stripe access is to be confirmed on official portals.
 7. Course deadline or deliverable format that affects scope.
