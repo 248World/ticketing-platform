@@ -23,3 +23,5 @@ jobs:
             echo ".env is tracked by Git"
             exit 1
           fi
+      - name: Deliberate failure
+        run: test -f THIS_FILE_DOES_NOT_EXIST
