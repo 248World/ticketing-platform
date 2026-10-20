@@ -35,3 +35,4 @@ Spring Boot 4.1.1, chosen in docs/architecture/adr/0003-spring-boot-version.md.
 - Build and test: `cd backend` then `mvn verify`
 - Run: `mvn spring-boot:run`
 - Health check: `http://localhost:8080/actuator/health` returns status UP
+- CI: GitHub Actions runs `mvn -B verify` on every pull request (job `backend`).
