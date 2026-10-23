@@ -40,3 +40,8 @@ Spring Boot 4.1.1, chosen in docs/architecture/adr/0003-spring-boot-version.md.
 - Database: the backend needs PostgreSQL. Start it with the commands in "Local database", and load the variables from `.env` into your terminal before `mvn spring-boot:run`.
 - Tests: integration tests start their own PostgreSQL 18 container with Testcontainers, so Docker must be running. They never touch the development database.
 - Stations: `GET /api/v1/stations` returns the station list (empty until simulated data is added).
+
+## Mobile
+
+Flutter app in `mobile/` (web target first, see ADR-0001). It needs the backend and database running. Run instructions are in `mobile/README.md`.
+CORS: the backend allows only configured origins, see docs/architecture/adr/0004-cors-policy.md.
