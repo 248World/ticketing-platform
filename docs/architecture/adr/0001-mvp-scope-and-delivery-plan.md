@@ -36,3 +36,4 @@ of it well is unlikely, so scope must be chosen deliberately.
 5. Simulated payment, webhooks, ticket issuance
 6. Thin Flutter app over the backend
 7. Everything else, as time allows
+
