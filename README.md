@@ -45,3 +45,5 @@ Spring Boot 4.1.1, chosen in docs/architecture/adr/0003-spring-boot-version.md.
 
 Flutter app in `mobile/` (web target first, see ADR-0001). It needs the backend and database running. Run instructions are in `mobile/README.md`.
 CORS: the backend allows only configured origins, see docs/architecture/adr/0004-cors-policy.md.
+
+CI: the `mobile` job runs `flutter analyze` and `flutter test` with the Flutter version pinned in `.github/workflows/ci.yml`.
