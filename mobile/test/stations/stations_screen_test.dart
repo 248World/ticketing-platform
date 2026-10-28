@@ -25,7 +25,7 @@ void main() {
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
 
     await tester.pumpAndSettle();
-    expect(find.text('Simulated Central'), findsOneWidget);
+    expect(find.text('Nowhere'), findsOneWidget);
     expect(find.text('Monrovia (SIM1)'), findsOneWidget);
   });
 
